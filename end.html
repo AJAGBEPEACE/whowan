@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <style>
+        body{
+          background-image: url(./images/bg.png);
+        }
+        img{
+          margin-top: 10vh !important;
+        }
+        h1{
+            font-size: 60px;
+            animation-name: cong;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            color: white;
+        }
+        h3{
+            font-size: 30px;
+        }
+        @keyframes cong {
+            0%{
+                color: red;
+            }
+            30%{
+                color: blue;
+            }
+            50%{
+                color: gold;
+            }
+            70%{
+                color: green;
+            }
+            100%{
+                color: cyan;
+            }
+
+        }
+
+        @media (max-width:720px) {
+    
+        body{
+          background-image: url(./images/bg.png);
+          /* overflow-y: hidden !important; */
+        }
+        img{
+          margin-top: 10vh !important;
+        }
+        h1{
+            font-size: 40px;
+            animation-name: cong;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            color: white;
+        }
+        h3{
+            font-size: 20px;
+        }
+        }
+
+  
+      </style>
+    <div class="container m-auto first col-lg-6 col-sm-12 col-md-6">
+        <div class="row">
+            <img src="./images/milli_logo-removebg-preview.png" alt="">
+                <h1 class="text-center ">CONGRATULATIONS</h1>
+                <h3 class="text-white text-center">You are have won the sum of 30 Million Dollars😍😎 <br> We hope you put it into good use😉 <br>happy spending!!🤗😚</h3>
+            
+        </div>
+    </div>
+</body>
+</html>
