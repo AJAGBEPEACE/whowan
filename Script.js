@@ -99,7 +99,7 @@ countDown=()=>{
        
         dont.value = "Time Up"
         // setTimeout(playMusic, 1000)
-        window.location.href="landing.html"
+        window.location.href="index.html"
     }
 }
 countDown()
@@ -120,7 +120,7 @@ check=(e)=>{
         lose.play()
         win.pause()
         move=()=>{
-            window.location.href="landing.html"
+            window.location.href="index.html"
         }
         setTimeout(move, 2000)
         

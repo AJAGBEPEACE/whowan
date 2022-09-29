@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">`
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-    <img class="imgg" src="./images/bg2.jfif" alt="">
-    <div class="container  col-lg-6 col-sm-12 col-md-6 que">
-        <input type="text" id="dont" disabled class="form-control text-center fs-1 col-lg-4 shadow text-white">
-        <div class="row">
-            <div id="count" class="text-center mb-3 fs-3 text-white"></div>
-            <img src="./images/milli_logo-removebg-preview.png" class="immg" alt="">
-            <h3 id="disp" class=" col-lg-6 col-sm-12 col-md-6 text-center text-light shadow ms-2">You won 00000$</h3>
-                <h2 class="text-center text-light  p-2" id="question"></h2>
-                <div class="d-lg-flex justify-content-between flex-wrap">
-                <button class="text-center fs-4 text-light col-lg-6 col-sm-12 p-1" id="a" value="a" onclick="check(event)"></button>
-                <button class="text-center fs-4 text-light col-lg-6 col-sm-12 p-1" id="b" value="b" onclick="check(event)"></button>
-                <button class="text-center fs-4 text-light col-lg-6 col-sm-12 p-1 mt-2" id="c" value="c" onclick="check(event)"></button>
-                <button class="text-center fs-4 text-light col-lg-6 col-sm-12 p-1 mt-2" id="d"  value="d" onclick="check(event)"></button>
-                </div>
-            <button class="btn text-light btn-success w-25 mt-3  fs-2" onclick="fifty()" style="margin-left: 30vh;">50/50</button>
-        </div>
+    <style>
+      body{
+        background-image: url(./images/bg.png);
+      }
+      img{
+        margin-top: 10vh !important;
+      }
+        button{
+            justify-content: center;
+            margin-top: 5vh !important;
+            /* margin-left: 30vh; */
+        }
 
+    </style>
+    <div class="container m-auto first col-lg-6">
+        <div class="row">
+            <img src="./images/milli_logo-removebg-preview.png" alt="">
+                <button class="btn btn-primary  p-1 fs-3 mx-auto col-lg-6 col-sm-4 rounded-pill " onclick="start()">Start Quiz</button>
+            
+        </div>
     </div>
+
+        <div class="contianer p-4 col-lg-6 mx-auto shadow">
+            <div class="row">
+                <h3 class="text-center text-white">Rules of the game</h3>
+                <ol class="text-white">
+                    <li>Each answer has duration of 15 seconds</li>
+                    <li>Any lose is the End of the game</li>
+                    <li>You have the opportunity of 50/50 chance </li>
+                    <li>You have 8 questions to answer</li>
+                </ol>
+                <b class=" text-success">Wishing you best of luck</b>
+            </div>
+        </div>
+    <script>
+        const start =()=>{
+            window.location.href="wwtbm.html"
+        }
+    </script>
 </body>
-<script src="/Script.js"></script>
 </html>
